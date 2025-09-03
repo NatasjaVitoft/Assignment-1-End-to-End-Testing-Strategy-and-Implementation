@@ -1,28 +1,25 @@
 # Python cache
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 
 # Virtual environments
 venv/
 .venv/
 env/
 
-# Build & packaging
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mutation testing
+mutmut_cache/
+mutatest_cache/
+
+# Build artifacts
 build/
 dist/
 *.egg-info/
-.eggs/
-*.whl
-
-# Testing
-.pytest_cache/
-.coverage
-coverage.xml
-htmlcov/
-mutmut_cache/
-mutatest_cache/
 
 # Editors
 .vscode/
@@ -31,7 +28,3 @@ mutatest_cache/
 # System files
 .DS_Store
 Thumbs.db
-
-# (Optional) Poetry
-# Only ignore poetry.lock if you don't want reproducible builds
-# poetry.lock
